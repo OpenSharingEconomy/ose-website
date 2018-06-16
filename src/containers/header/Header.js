@@ -11,10 +11,10 @@ export default class Header extends React.Component {
           <img src={index} />
           <nav id="header-menu">
             <Link exact to="/">Home</Link>
+            <Link to="/team">Team</Link>
             <Link to="/whitepaper">White Paper</Link>
             <Link to="/about">About</Link>
           </nav>
-          <h2 id="header-title"> Open Sharing Economy </h2>
         </div>
       </header>
 

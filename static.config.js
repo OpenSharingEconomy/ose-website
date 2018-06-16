@@ -2,16 +2,21 @@ import axios from 'axios'
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
+
 export default {
   getSiteData: () => ({
     title: 'OSE Foundation',
   }),
   getRoutes: async () => {
-    const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts')
+    // const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts')
     return [
       {
         path: '/',
         component: 'src/containers/Home',
+      },
+      {
+        path: '/team',
+        component: 'src/containers/Team',
       },
       {
         path: '/whitepaper',
