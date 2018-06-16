@@ -14,23 +14,27 @@ export default {
         component: 'src/containers/Home',
       },
       {
+        path: '/whitepaper',
+        component: 'src/containers/Whitepaper',
+      },
+      {
         path: '/about',
         component: 'src/containers/About',
       },
-      {
-        path: '/blog',
-        component: 'src/containers/Blog',
-        getData: () => ({
-          posts,
-        }),
-        children: posts.map(post => ({
-          path: `/post/${post.id}`,
-          component: 'src/containers/Post',
-          getData: () => ({
-            post,
-          }),
-        })),
-      },
+      // {
+      //   path: '/blog',
+      //   component: 'src/containers/Blog',
+      //   getData: () => ({
+      //     posts,
+      //   }),
+      //   children: posts.map(post => ({
+      //     path: `/post/${post.id}`,
+      //     component: 'src/containers/Post',
+      //     getData: () => ({
+      //       post,
+      //     }),
+      //   })),
+      // },
       {
         is404: true,
         component: 'src/containers/404',

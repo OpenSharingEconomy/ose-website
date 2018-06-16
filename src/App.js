@@ -4,6 +4,8 @@ import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
 //
 import Routes from 'react-static-routes'
+import Header from './containers/header/Header'
+import Footer from './containers/footer/Footer'
 
 injectGlobal`
   body {
@@ -24,9 +26,7 @@ const AppStyles = styled.div`
   }
 
   nav {
-    width: 100%;
-    background: #108db8;
-
+    width: 40%;
     a {
       color: white;
       padding: 1rem;
@@ -46,15 +46,13 @@ const AppStyles = styled.div`
 const App = () => (
   <Router>
     <AppStyles>
-      <nav>
-        <Link exact to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-      </nav>
+      <Header/>
       <div className="content">
         <Routes />
       </div>
+      <Footer/>
     </AppStyles>
+
   </Router>
 )
 

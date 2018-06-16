@@ -1,0 +1,12 @@
+#footer-display {
+  position:fixed;
+  bottom:0;
+  width: 100%;
+  border-top: 1px solid grey;
+  padding: 5px;
+  text-align: center;
+}
+
+#footer-ose{
+
+}
