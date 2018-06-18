@@ -1,37 +1,26 @@
 import React from 'react'
 import ScrollIntoView from 'react-scroll-into-view'
-import { Router, Route, Link } from 'react-static'
+import { Router, Route} from 'react-static'
 import './Header.css'
 import index from '../../index.jpeg'
+import * as Scroll from 'react-scroll';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 export default class Header extends React.Component {
+  constructor(props){
+    super(props)
+
+  }
   render(){
     return(
       <header>
         <div id="header-display">
-          <img src={index} />
+          <img src={index} onClick={() => scroll.scrollToTop()} />
           <nav id="header-menu">
-            <ScrollIntoView selector="#home-ose">
-              <button className="mdl-button mdl-js-button mdl-button--raised">
-                Home
-              </button>
-            </ScrollIntoView>
-            <ScrollIntoView selector="#team">
-              <button className="mdl-button mdl-js-button mdl-button--raised">
-                Team
-              </button>
-            </ScrollIntoView>
-              <ScrollIntoView selector="#whitepaper">
-                <button className="mdl-button mdl-js-button mdl-button--raised">
-                  Whiteppaper
-                </button>
-              </ScrollIntoView>
-              <ScrollIntoView selector="#about">
-                <button className="mdl-button mdl-js-button mdl-button--raised">
-                  About
-                </button>
-              </ScrollIntoView>
-
+            <Link activeClass="active" className="team" to="team" spy={true} smooth={true} duration={750} offset={-200}> Team </Link>
+            <Link activeClass="active" className="whitepaper" to="whitepaper" spy={true} smooth={true} duration={750} offset={-200}> WhitePaper </Link>
+            <Link activeClass="active" className="about" to="about" spy={true} smooth={true} duration={750} offset={200}> About  </Link>
           </nav>
         </div>
       </header>

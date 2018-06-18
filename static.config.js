@@ -13,7 +13,7 @@ export default {
       {
         path: '/',
         component: 'src/containers/Home',
-      }
+      },
       // {
       //   path: '/team',
       //   component: 'src/containers/Team',
@@ -43,7 +43,7 @@ export default {
       {
         is404: true,
         component: 'src/containers/404',
-      },
+      }
     ]
   },
   renderToHtml: (render, Comp, meta) => {

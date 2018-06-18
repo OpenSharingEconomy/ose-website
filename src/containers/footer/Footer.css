@@ -1,11 +1,17 @@
 #footer-display {
-  position:fixed;
+  position:relative;
   bottom:0;
   width: 100%;
   border-top: 1px solid grey;
   padding: 5px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: hidden;
 }
+
 
 #footer-ose{
 

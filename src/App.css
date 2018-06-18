@@ -9,6 +9,7 @@ body {
   overflow-y: auto;
 }
 
+
   #ose-background {
     z-index: 1;
     position: fixed;
@@ -22,12 +23,12 @@ body {
     z-index: 2;
     position: relative;
     width: 100%;
+    top:100px;
     min-height: calc(100% - 150px);
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
-    padding-top: 150px;
     overflow: hidden;
-    background: white;
+    background-color: #d6d6c2
   }
