@@ -3,7 +3,7 @@ import { withSiteData,SiteData} from 'react-static'
 
 
 export default withSiteData(() => (
-  <div>
+  <div id='whitepaper'>
     <h1 style={{ textAlign: 'center' }}>white paper</h1>
   </div>
 ))

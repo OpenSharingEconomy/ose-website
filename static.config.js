@@ -13,19 +13,19 @@ export default {
       {
         path: '/',
         component: 'src/containers/Home',
-      },
-      {
-        path: '/team',
-        component: 'src/containers/Team',
-      },
-      {
-        path: '/whitepaper',
-        component: 'src/containers/Whitepaper',
-      },
-      {
-        path: '/about',
-        component: 'src/containers/About',
-      },
+      }
+      // {
+      //   path: '/team',
+      //   component: 'src/containers/Team',
+      // },
+      // {
+      //   path: '/whitepaper',
+      //   component: 'src/containers/Whitepaper',
+      // },
+      // {
+      //   path: '/about',
+      //   component: 'src/containers/About',
+      // },
       // {
       //   path: '/blog',
       //   component: 'src/containers/Blog',

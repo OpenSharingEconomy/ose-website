@@ -4,21 +4,37 @@ import index from '../index.jpeg'
 import './Home.css'
 import Team from './Team'
 import WhitePaper from './Whitepaper'
+import About from './About'
+import ScrollableAnchor from 'react-scrollable-anchor'
+import scrollToComponent from 'react-scroll-to-component';
+import ScrollIntoView from 'react-scroll-into-view'
 
+export default class Home extends React.Component {
+  constructor(props){
+    super(props);
+    console.log( this.props.match.params[0])
+    console.log( this.props.match.params.value)
+    }
 
-export default withSiteData(() => (
-  <div id="home-ose">
-    <section>
-      <h2> Open Sharing Economy </h2>
+//   componentDidMount() {
+//   window.scrollTo(0, 0)
+//
+//   <ScrollIntoView selector="#footer">
+//
+// }
+  render() {
 
-    </section>
-  <section>
-      <Team />
-    </section>
-    <section>
-      <WhitePaper />
-    </section>
+    return(
 
-</div>
+      <div id="home-ose">
+        <a name='home-ose'></a>
+          <div id="home-ose" className='main'>
+         <section ><a name='team'></a> <Team />         </section>
+         <section ><a name='whitepaper'></a><WhitePaper />   </section>
+         <section ><a name='About'></a>  <About />   </section>
+       </div>
+     </div>
 
-))
+    )
+  }
+}
