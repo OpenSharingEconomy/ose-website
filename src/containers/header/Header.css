@@ -10,7 +10,7 @@ background-color: white;
 
 #header-display {
   width: 100%;
-  /* background: #c9cacc; */
+
   display: flex;
   align-items: center;
   border-bottom: 2px solid rgba(0,0,0, .8);
@@ -32,4 +32,14 @@ a {
   color: black;
   text-decoration: none;
   margin-left: 30px;
+}
+
+#ose-icon{
+  margin-left: 40%;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  float:right;
 }

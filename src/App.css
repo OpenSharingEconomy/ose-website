@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Andale Mono", sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -30,5 +30,5 @@ body {
     align-items: stretch;
     justify-content: flex-start;
     overflow: hidden;
-    background-color: #d6d6c2
+    background: linear-gradient(white,#d6d6c2);
   }
