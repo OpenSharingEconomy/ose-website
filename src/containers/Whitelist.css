@@ -1,0 +1,22 @@
+input[type=text]:focus {
+   background-color: lightblue;
+   padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#whitelist-form {
+  width:50%;
+  margin: auto;
+
+}
+
+label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  display: block;
+  margin: auto;
+}

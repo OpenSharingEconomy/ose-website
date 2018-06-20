@@ -7,12 +7,16 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
   overflow: hidden;
 }
 
 
-#footer-ose{
+#ose-icon{
+  margin: auto;
 
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
 }

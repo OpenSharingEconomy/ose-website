@@ -1,12 +1,22 @@
 import React from 'react'
 import './Footer.css'
+import telegramme from '../../img/telegrame.jpg'
+import twitter from '../../img/twitter.png'
 
 export default class Footer extends React.Component {
   render(){
     return(
       <div id="footer-display">
         <span id="footer-ose"> 2018 - OpenSharingEconomy </span>
-      </div>
+          <div id="ose-icon">
+            <a href="   https://t.me/blockfood" >
+            <img className="icon" src={telegramme} />
+            </a>
+            <a href="https://twitter.com/BlockFood" >
+              <img  className="icon"  src={twitter} />
+            </a>
+          </div>
+    </div>
     )
   }
 }

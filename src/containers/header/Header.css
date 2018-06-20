@@ -8,38 +8,74 @@ z-index: 1000;
 background-color: white;
 }
 
-#header-display {
-  width: 100%;
+.headerFix{
+  background-color: white;
+  height: 110px;
+}
 
+.headerMoving{
+transition: height 1.5s ease;
+height:90px ;
+}
+
+
+#headerDisplay {
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid rgba(0,0,0, .8);
-
+  /* border-bottom: 2px solid rgba(0,0,0, .85); */
 }
 
-img {
-    border-radius: 50%;
+#header-menu{
+  margin-right:auto;
+}
+
+.oseLogoFix {
     padding: 5px;
+    margin-right: 25px;
     margin-left: 100px;
-    width: 7%;
+    width: 5%;
 }
 
-nav {
-  margin-left: 30px;
+.oseLogoMoving {
+    padding: 5px;
+    margin-right: 25px;
+    margin-left: 100px;
+    transition: width 1.5s ease;
+    width: 3%;
+}
+
+#button-whitelist {
+  margin-left: auto;
+  border: 5px double rgba(0,0,0,0.7);
+
+}
+
+.whitelist {
+  display: block;
+  text-align: center;
+  margin-left: 25%;
 }
 
 a {
-  color: black;
+  color:rgba(0,0,0, .8);
   text-decoration: none;
-  margin-left: 30px;
+  padding-right: 50px;
+  float:left;
+cursor: pointer;
+}
+a:hover{
+  color:rgba(0,0,0, 1);
 }
 
-#ose-icon{
-  margin-left: 40%;
+.oseIcon{
+  display:flex;
+  float:right;
 }
 
 .icon {
   width: 25px;
   height: 25px;
-  float:right;
 }
