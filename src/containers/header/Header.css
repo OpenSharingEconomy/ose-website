@@ -1,10 +1,33 @@
+@media (max-width: 850px) {
+  .iconDisplay{
+    display: flex;
+    width: 50px;
+    justify-content: flex-start;
+     flex-direction: column;
+  }
+  .menuDisplay{
+    display: flex;
+    align-items:center;
+  }
+  #header-menu{
+    display:flex;
+    align-items: center;
+  }
+  .link {
+    transition: margin 1s ease;
+    margin: -4%;
+  }
+  .whitelist {
+  }
+}
+
 .headerFix{
   top: 0;
   position:fixed;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
   transition: height 0.4s ease;
-  height: 100px;
+  height: 110px;
   z-index: 1000;
   background-color: white;
 }
@@ -25,10 +48,6 @@
   align-items: center;
 }
 
-#header-menu{
-
-}
-
 .oseLogoFix {
     transition: width 0.5s ease;
     width: 7%;
@@ -37,7 +56,8 @@
 
 .oseLogoMoving {
     transition: width 1.5s ease;
-    width: 6%;
+    width: 7%;
+      min-width: 50px;
 }
 
 a {
@@ -59,7 +79,6 @@ a:hover{
 }
 
 .whitelist:hover {
-  padding: 10px;
   border: double black 2px;
 }
 

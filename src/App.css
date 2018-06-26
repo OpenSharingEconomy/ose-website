@@ -27,5 +27,5 @@ body {
     top:100px;
     min-height: calc(100% - 150px);
     overflow: hidden;
-    background: linear-gradient(white,#d6d6c2);
+    background: linear-gradient(white,#f5f5ef);
   }
