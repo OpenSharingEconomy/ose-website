@@ -12,7 +12,7 @@ import './App.css'
 const App = () => (
   <Router>
     <React.Fragment>
-      <Header/>
+        <Header/>
         <div id="ose-content">
           <Routes />
           <Footer/>

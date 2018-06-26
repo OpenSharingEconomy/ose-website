@@ -29,37 +29,41 @@ export default class Header extends React.Component {
   handleScroll(event){
     headerDisplay = ReactDOM.findDOMNode(this.refs.headerDisplay)
     this.setState({style:'Moving'})
-
-  }
+    console.log(this.state)
+    if(document.documentElement.scrollTop == 0)
+      this.setState({style:'Fix'})
+    }
 
 
   render(){
-    var className =  'header'+this.state.style
+    var headerAnim =  'header'+this.state.style
     var oseLogo =  'oseLogo'+this.state.style
-
       return(
-      <header className={className}>
-        <div id="headerDisplay" className={className} ref="headerDisplay">
-          <img className={oseLogo} src={Oselogo} onClick={() => scroll.scrollToTop()} />
-          <nav id="header-menu">
-            <Link activeClass="active" className="introduction" to="introduction" spy={true} smooth={true} duration={750} offset={-200}> Home </Link>
-            <Link activeClass="active" className="team" to="team" spy={true} smooth={true} duration={750} offset={-200}> Team </Link>
-            <Link activeClass="active" className="whitepaper" to="whitepaper" spy={true} smooth={true} duration={750} offset={-200}> WhitePaper </Link>
-            <Link activeClass="active" className="about" to="about" spy={true} smooth={true} duration={750} offset={200}> About </Link>
-          </nav>
-          <div id="button-whitelist">
-            <Link activeClass="active" className="whitelist" to="whitelist" spy={true} smooth={true} duration={750} offset={-200}> WHITELIST </Link>
-          </div>
-          <div id="ose-icon">
-            <a href="   https://t.me/blockfood" >
-            <img className="icon" src={telegramme} />
-            </a>
-            <a href="https://twitter.com/BlockFood" >
-              <img  className="icon"  src={twitter} />
-            </a>
-          </div>
-        </div>
-      </header>
+          <header  id="headerDisplay" refs="headerDisplay" className={`row align-items-center ${headerAnim}`}>
+              <div className="col-8 menuDisplay">
+                <img className={oseLogo} src={Oselogo} onClick={() => scroll.scrollToTop()} />
+                <nav id="header-menu">
+                  <Link activeClass="active" className="link" to="introduction" spy={true} smooth={true} duration={750} offset={-200}> Home </Link>
+                  <Link activeClass="active" className="link" to="team" spy={true} smooth={true} duration={750} offset={-200}> Team </Link>
+                  <Link activeClass="active" className="link" to="whitepaper" spy={true} smooth={true} duration={750} offset={-200}> WhitePaper </Link>
+                  <Link activeClass="active" className="link" to="about" spy={true} smooth={true} duration={750} offset={200}> About </Link>
+                </nav>
+              </div>
+              <div className="col-4 iconDisplay">
+                <div id="button-whitelist">
+                  <Link activeClass="active" className="whitelist" to="whitelist" spy={true} smooth={true} duration={750} offset={-200}> WHITELIST </Link>
+                </div>
+                <div id="oseIcon">
+                  <a href="   https://t.me/blockfood" >
+                    <img className="icon" src={telegramme} />
+                  </a>
+                  <a href="https://twitter.com/BlockFood" >
+                    <img  className="icon"  src={twitter} />
+                  </a>
+                </div>
+              </div>
+          </header>
+
 
 
     )

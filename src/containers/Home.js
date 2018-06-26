@@ -22,8 +22,8 @@ export default class Home extends React.Component {
     return(
       <div id="home-ose">
         <a name='home-ose'></a>
-          <div id="home-ose" className='main'>
-        <section ><a name='home'></a> <Introduction />         </section>
+        <div id="home-ose">
+        <section  ><a name='home'></a> <Introduction />         </section>
          <section ><a name='team'></a> <Team />         </section>
          <section ><a name='whitepaper'></a><WhitePaper />   </section>
          <section ><a name='whitelist'></a><Whitelist />   </section>
