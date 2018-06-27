@@ -14,40 +14,56 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 export default class Header extends React.Component {
   constructor(props){
     super(props)
-    this.state = {style:"Fix"}
+    this.state = {style:"Fix",width:2500}
     this.handleScroll = this.handleScroll.bind(this)
+    this.handleSize = this.handleSize.bind(this)
   }
 
   componentDidMount(){
     window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.handleSize);
   }
 
   componentWillUnmount(){
     window.removeEventListener('scroll',this.handleScroll)
+    window.removeEventListener('resize', this.handleSize);
   }
 
   handleScroll(event){
     headerDisplay = ReactDOM.findDOMNode(this.refs.headerDisplay)
     this.setState({style:'Moving'})
-    console.log(this.state)
     if(document.documentElement.scrollTop == 0)
       this.setState({style:'Fix'})
-    }
+  }
 
+  handleSize(event){
+    this.setState({width: document.getElementById('headerDisplay').offsetWidth})
+  }
 
   render(){
-    var headerAnim =  'header'+this.state.style
-    var oseLogo =  'oseLogo'+this.state.style
+    var headerAnim ='header'+this.state.style
+    var oseLogo ='oseLogo'+this.state.style
+    var Width = this.state.width
       return(
           <header  id="headerDisplay" refs="headerDisplay" className={`row align-items-center ${headerAnim}`}>
               <div className="col-8 menuDisplay">
                 <img className={oseLogo} src={Oselogo} onClick={() => scroll.scrollToTop()} />
-                <nav id="header-menu">
-                  <Link activeClass="active" className="link" to="introduction" spy={true} smooth={true} duration={750} offset={-200}> Home </Link>
-                  <Link activeClass="active" className="link" to="team" spy={true} smooth={true} duration={750} offset={-200}> Team </Link>
-                  <Link activeClass="active" className="link" to="whitepaper" spy={true} smooth={true} duration={750} offset={-200}> WhitePaper </Link>
-                  <Link activeClass="active" className="link" to="about" spy={true} smooth={true} duration={750} offset={200}> About </Link>
-                </nav>
+                {Width<515 ?
+                    (<nav id="header-menu">
+                      <Link activeClass="active" className="link" to="introduction" spy={true} smooth={true} duration={750} offset={-200}> Home </Link>
+                      <Link activeClass="active" className="link" to="team" spy={true} smooth={true} duration={750} offset={-200}> Team </Link>
+                      <Link activeClass="active" className="link" to="whitepaper" spy={true} smooth={true} duration={750} offset={-200}> WhitePaper </Link>
+                      <Link activeClass="active" className="link" to="about" spy={true} smooth={true} duration={750} offset={200}> About </Link>
+                    </nav>
+                  )
+                  :
+                  (<nav id="header-menu">
+                    <Link activeClass="active" className="link" to="introduction" spy={true} smooth={true} duration={750} offset={-200}> Home </Link>
+                    <Link activeClass="active" className="link" to="team" spy={true} smooth={true} duration={750} offset={-200}> Team </Link>
+                    <Link activeClass="active" className="link" to="whitepaper" spy={true} smooth={true} duration={750} offset={-200}> WhitePaper </Link>
+                    <Link activeClass="active" className="link" to="about" spy={true} smooth={true} duration={750} offset={200}> About </Link>
+                  </nav>)
+                }
               </div>
               <div className="col-4 iconDisplay">
                 <div id="button-whitelist">
@@ -63,9 +79,6 @@ export default class Header extends React.Component {
                 </div>
               </div>
           </header>
-
-
-
     )
   }
 }
