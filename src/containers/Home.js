@@ -22,7 +22,7 @@ export default class Home extends React.Component {
     return(
       <div id="home-ose">
         <a name='home-ose'></a>
-        <div id="home-ose">
+        <div>
         <section  ><a name='home'></a> <Introduction />         </section>
          <section ><a name='team'></a> <Team />         </section>
          <section ><a name='whitepaper'></a><WhitePaper />   </section>
