@@ -20,6 +20,10 @@
   }
 }
 
+#menu-dropdown{
+  margin-left: 25px;
+}
+
 .headerFix{
   top: 0;
   position:fixed;
