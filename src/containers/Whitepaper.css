@@ -1,0 +1,22 @@
+img{
+  width: 50px;
+}
+
+a {
+  color:rgba(0,0,0, .8);
+  text-decoration: none;
+  cursor: pointer;
+  float:left;
+}
+a:hover{
+  color:rgba(0,0,0, 1);
+}
+
+.container-flex {
+  display: flex;
+}
+
+.title{
+  float: left;
+  font-size: 180%;
+}

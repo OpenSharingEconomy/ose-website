@@ -1,17 +1,14 @@
-.container-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .imgTeam {
   margin-top: 50px;
-  border-radius: 50%;
-  width: 250px;
-  border-top: solid black 3px;
-  border-bottom: solid black 3px;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
 }
 
 p{
   padding-top: 10px;
+}
+
+div {
+  display: block;
 }

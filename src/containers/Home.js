@@ -3,7 +3,7 @@ import { withSiteData,SiteData} from 'react-static'
 import index from '../img/index.jpeg'
 import './Home.css'
 import Team from './Team'
-import WhitePaper from './Whitepaper'
+import Whitepaper from './Whitepaper'
 import Whitelist from './Whitelist'
 import About from './About'
 import Introduction from './Introduction'
@@ -25,7 +25,7 @@ export default class Home extends React.Component {
         <div>
         <section  ><a name='home'></a> <Introduction />         </section>
          <section ><a name='team'></a> <Team />         </section>
-         <section ><a name='whitepaper'></a><WhitePaper />   </section>
+         <section ><a name='whitepaper'></a><Whitepaper />   </section>
          <section ><a name='whitelist'></a><Whitelist />   </section>
         <section ><a name='About'></a>  <About />   </section>
        </div>

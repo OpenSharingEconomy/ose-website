@@ -38,7 +38,7 @@ export default class Header extends React.Component {
   }
 
   handleScroll(event){
-    headerDisplay = ReactDOM.findDOMNode(this.refs.headerDisplay)
+    var headerDisplay = ReactDOM.findDOMNode(this.refs.headerDisplay)
     this.setState({style:'Moving'})
     if(document.documentElement.scrollTop == 0)
       this.setState({style:'Fix'})
