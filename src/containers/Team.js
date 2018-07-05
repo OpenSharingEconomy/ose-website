@@ -9,13 +9,13 @@ import Linkedin from '../img/linkedin.png'
 import './Team.css'
 
 export default withSiteData(() => (
-  <div className="container">
+  <div>
     <div className='row'>
       <div className="col-12">
         <h1> Team </h1>
       </div>
     </div>
-    <div className="row">
+    <div className="row clear">
       <div className="col-4">
         <img src={Conrad} className="imgTeam"/>
         <p> Conrad Lelubre - CEO & Fonder </p>

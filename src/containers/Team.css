@@ -12,3 +12,21 @@ p{
 div {
   display: block;
 }
+
+.clear::after {
+clear: both;
+content: "";
+display: block;
+height: 0;
+}
+
+.test::before{
+  content: '';
+  background-color: grey;
+  height: 2px;
+  width: 80px;
+  border-radius: 25%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  }

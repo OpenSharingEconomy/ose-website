@@ -20,7 +20,7 @@ export default class Home extends React.Component {
 
   render() {
     return(
-      <div id="home-ose">
+      <div>
         <a name='home-ose'></a>
         <div>
         <section  ><a name='home'></a> <Introduction />         </section>

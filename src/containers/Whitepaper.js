@@ -27,44 +27,44 @@ export default class Whitepaper extends React.Component {
     const { pageNumber, numPages } = this.state;
 
     return (
-      <div className="container">
+      <div>
         <div className='row'>
-          <div class="col-12">
-            <h1> WhitePaper </h1>
+          <div className="col-12">
+            <h1 className="title"> WhitePaper </h1>
           </div>
         </div>
-        <div class="row">
-          <div class="col-4 offset-md-1">
+        <div className="row">
+          <div className="col-12">
             <h1 className="title"> Read </h1>
           </div>
-          <div class="col-4 offset-md-3">
-            <h1 className="title"> Download </h1>
-          </div>
         </div>
-        <div class="row">
-          <div class="col-4 offset-md-1">
+        <div className="row">
+          <div className="col-4">
             <a href={PDF} target='_blank'>
               <img src={flagFR}/>
               <span> FRENCH PDF </span>
             </a>
           </div>
-          <div class="col-4 offset-md-3">
-            <a href={PDF} target='_blank'>
-              <img src={flagFR}/>
-              <span> Download FRENCH version </span>
-            </a>
-          </div>
-          <div class="w-100"></div>
-          <div class="col-4 offset-md-1">
+          <div className="col-4">
             <a href={PDF} target='_blank'>
               <img src={flagFR}/>
               <span> ENGLISH PDF </span>
             </a>
           </div>
-          <div class="col-4 offset-md-3">
+          <div className="w-100"></div>
+            <div className="col-12">
+              <h1 className="title"> Download </h1>
+            </div>
+          <div className="col-4">
             <a href={PDF} target='_blank'>
               <img src={flagFR}/>
               <span> Download ENGLISH version </span>
+            </a>
+          </div>
+          <div className="col-4">
+            <a href={PDF} target='_blank'>
+              <img src={flagFR}/>
+              <span> Download FRENCH version </span>
             </a>
           </div>
         </div>
