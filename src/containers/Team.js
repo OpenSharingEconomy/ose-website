@@ -3,10 +3,10 @@ import { withSiteData,SiteData} from 'react-static'
 import  Conrad from '../img/team/conrad.jpeg'
 import  Romain from '../img/team/romain.jpg'
 import  Julien from '../img/team/julien.jpg'
-import Linkedin from '../img/linkedin.png'
+import Linkedin from '../img/logo/linkedin.png'
 
 
-import './Team.css'
+import './css/Team.css'
 
 export default withSiteData(() => (
   <div>
@@ -18,21 +18,24 @@ export default withSiteData(() => (
     <div className="row clear">
       <div className="col-4">
         <img src={Conrad} className="imgTeam"/>
-        <p> Conrad Lelubre - CEO & Fonder </p>
+        <p> Conrad Lelubre</p>
+        <p> CEO & Fonder</p>
         <a href="https://www.linkedin.com/in/conradlelubre/" >
           <img className="icon" src={Linkedin} />
         </a>
       </div>
       <div className="col-4">
         <img src={Julien} className="imgTeam"/>
-        <p> Julien Leroy - COO </p>
+        <p> Julien Leroy</p>
+        <p> COO </p>
         <a href="https://www.linkedin.com/in/leroyjulien/" >
           <img className="icon" src={Linkedin} />
         </a>
       </div>
       <div className="col-4">
         <img src={Romain} className="imgTeam"/>
-        <p> Romain - Blockchain </p>
+        <p> Romain</p>
+        <p> Blockchain </p>
         <a href="https://www.linkedin.com/in/romaindestenay/" >
           <img className="icon" src={Linkedin} />
         </a>

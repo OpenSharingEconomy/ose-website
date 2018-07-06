@@ -2,7 +2,6 @@ import React from 'react'
 import { Router, Route, Link } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
-//
 import Routes from 'react-static-routes'
 import Header from './containers/header/Header'
 import Footer from './containers/footer/Footer'

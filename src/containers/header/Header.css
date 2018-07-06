@@ -32,20 +32,22 @@
   transition: height 0.4s ease;
   height: 100px;
   z-index: 1000;
-  background-color: white;
-  border: grey solid 1px
+  border: grey solid 0px;
+
 }
 
 .headerMoving{
   top: 0;
-  border: grey solid 1px;
   position:fixed;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  transition: height 1s ease;
+  transition:background-color 0.5s ease,border-width 1s ease,height 0.7s ease;
   height: 80px;
+  background-color: #E7DFDD;
+  border: grey solid 1px;
   z-index: 1000;
-  background-color: white;
+  /* transition: border-width 1s ease;
+  border-width: 1px; */
 }
 
 .menuDisplay{

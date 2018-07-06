@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
-import telegramme from '../../img/telegrame.jpg'
-import twitter from '../../img/twitter.png'
+import telegramme from '../../img/logo/telegrame.png'
+import twitter from '../../img/logo/twitter.png'
 
 export default class Footer extends React.Component {
   render(){

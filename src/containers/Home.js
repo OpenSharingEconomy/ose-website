@@ -1,7 +1,6 @@
 import React from 'react'
 import { withSiteData,SiteData} from 'react-static'
-import index from '../img/index.jpeg'
-import './Home.css'
+import './css/Home.css'
 import Team from './Team'
 import Whitepaper from './Whitepaper'
 import Whitelist from './Whitelist'

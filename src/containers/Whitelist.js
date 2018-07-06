@@ -1,6 +1,5 @@
 import * as React from 'react'
-import './Whitelist.css'
-import { Document, Page } from 'react-pdf';
+import './css/Whitelist.css'
 
 export default class Whitelist extends React.Component {
   constructor(props){

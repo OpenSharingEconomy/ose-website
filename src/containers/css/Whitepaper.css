@@ -1,0 +1,40 @@
+img{
+  width: 50px;
+}
+
+a {
+  color:rgba(0,0,0, .8);
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover{
+  color:rgba(0,0,0, 1);
+}
+
+.container-flex {
+  display: flex;
+}
+
+
+
+#read {
+    color: #8f9fba;
+}
+#download {
+    margin-top: 100px;
+    color: #8f9fba;
+}
+.readDownload{
+  font-size: 180%;
+  margin-bottom: 50px;
+}
+.readDownload::before{
+  content: '';
+  background-color: #CDE3FB;
+  height: 2px;
+  width: 60px;
+  border-radius: 1px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
