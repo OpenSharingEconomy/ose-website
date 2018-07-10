@@ -21,16 +21,19 @@ export default class Whitelist extends React.Component {
 
   render() {
     return(
-      <div>
-        <form onSubmit={this.handleSubmit}>
-        <div id="whitelist-form">
-          <label id="input">
-            Enter your e-mail
-          </label>
-          <input  onChange={this.handleChange} value={this.state.mail} type="mail" name="name" />
-          <input type="submit" value="Register" />
+      <div className="row whitelist">
+        <div className="col-12">
+        <h1 className="text-center"> Whitelist </h1>
+          <form onSubmit={this.handleSubmit}>
+          <div id="whitelist-form">
+            <label className="form-label" >
+              Enter your e-mail
+            </label>
+            <input className="form-mail"  onChange={this.handleChange} value={this.state.mail} type="mail" name="name" />
+            <input className="form-submit btn btn-warning" type="submit" value="Register" />
+          </div>
+          </form>
         </div>
-        </form>
      </div>
     )
   }

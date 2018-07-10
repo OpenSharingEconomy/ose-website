@@ -18,18 +18,20 @@ export default withSiteData(() => (
     <div className="row clear">
       <div className="col-4">
         <img src={Conrad} className="imgTeam"/>
-        <p> Conrad Lelubre</p>
-        <p> CEO & Fonder</p>
-        <a href="https://www.linkedin.com/in/conradlelubre/" >
-          <img className="icon" src={Linkedin} />
-        </a>
+        <div >
+          <p> Conrad Lelubre</p>
+          <p> CEO & Fonder</p>
+          <a href="https://www.linkedin.com/in/conradlelubre/" >
+            <img className="icon-team" src={Linkedin} />
+          </a>
+        </div>
       </div>
       <div className="col-4">
         <img src={Julien} className="imgTeam"/>
         <p> Julien Leroy</p>
         <p> COO </p>
         <a href="https://www.linkedin.com/in/leroyjulien/" >
-          <img className="icon" src={Linkedin} />
+          <img className="icon-team" src={Linkedin} />
         </a>
       </div>
       <div className="col-4">
@@ -37,7 +39,7 @@ export default withSiteData(() => (
         <p> Romain</p>
         <p> Blockchain </p>
         <a href="https://www.linkedin.com/in/romaindestenay/" >
-          <img className="icon" src={Linkedin} />
+          <img className="icon-team" src={Linkedin} />
         </a>
       </div>
       </div>

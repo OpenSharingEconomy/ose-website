@@ -2,12 +2,18 @@
   margin-top: 50px;
   border-radius: 50px;
   height: 100px;
-  width: 100px;
+  width: 149px;
+}
+
+.icon-team{
+  width: 25px;
+  height: 25px;
 }
 
 div {
   display: block;
 }
+
 
 .clear::after {
 clear: both;

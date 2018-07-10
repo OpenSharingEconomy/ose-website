@@ -1,21 +1,21 @@
-img{
+.drapeaux{
   width: 50px;
 }
 
 a {
-  color:rgba(0,0,0, .8);
+  color:rgba(66,191,244, .6);
   text-decoration: none;
   cursor: pointer;
 }
 a:hover{
-  color:rgba(0,0,0, 1);
+  color:rgba(66,191,244, 1);
+  text-decoration: none;
+
 }
 
 .container-flex {
   display: flex;
 }
-
-
 
 #read {
     color: #8f9fba;
@@ -25,10 +25,11 @@ a:hover{
     color: #8f9fba;
 }
 .readDownload{
+  margin-top: 20px;
   font-size: 180%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-.readDownload::before{
+/* .readDownload::before{
   content: '';
   background-color: #CDE3FB;
   height: 2px;
@@ -37,4 +38,4 @@ a:hover{
   position: absolute;
   top: 50px;
   left: 0;
-}
+} */

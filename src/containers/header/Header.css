@@ -46,8 +46,6 @@
   background-color: #E7DFDD;
   border: grey solid 1px;
   z-index: 1000;
-  /* transition: border-width 1s ease;
-  border-width: 1px; */
 }
 
 .menuDisplay{
@@ -67,18 +65,15 @@
       min-width: 50px;
 }
 
-a {
-  color:rgba(0,0,0, .8);
+.link {
   text-decoration: none;
   cursor: pointer;
+  padding: 20px;
 }
-a:hover{
+.link:hover{
   color:rgba(0,0,0, 1);
 }
 
-.link {
-  padding: 20px;
-}
 
 .whitelist {
   padding: 10px;
