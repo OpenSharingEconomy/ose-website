@@ -16,8 +16,6 @@
     transition: margin 1s ease;
     margin: -4%;
   }
-  .whitelist {
-  }
 }
 
 #menu-dropdown{
@@ -43,7 +41,7 @@
   -webkit-transform: translateZ(0);
   transition:background-color 0.5s ease,border-width 1s ease,height 0.7s ease;
   height: 80px;
-  background-color: #E7DFDD;
+  background-color: #f5f5f5;
   border: grey solid 1px;
   z-index: 1000;
 }
@@ -82,9 +80,6 @@
 
 .whitelist:hover {
   border: double black 2px;
-}
-
-#oseIcon{
 }
 
 .icon {
