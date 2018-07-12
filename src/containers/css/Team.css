@@ -20,7 +20,7 @@
 }
 
 
-a.desc{
+.desc{
   float:right;
   margin-right: 10px;
   border: 0.5px solid black;
@@ -28,6 +28,15 @@ a.desc{
   height: 25px;
 }
 .desc:hover{
-  background-color: black;
-  color:white;
+  background-color: #cff0f7;
+}
+
+.popup{
+  background-color: #efedd7;
+}
+
+.popupInner{
+  color:black;
+  text-align: center;
+  border:solid 1px red
 }

@@ -26,7 +26,7 @@ export default class Whitepaper extends React.Component {
         <div id="read">
           <div  className="row">
             <div className="col-12">
-              <h1 className="readDownload"> Read </h1>
+              <h2 className="readDownload"> Read </h2>
             </div>
           </div>
           <div className="row">
@@ -48,7 +48,7 @@ export default class Whitepaper extends React.Component {
           <div id="download">
             <div  className="row"></div>
               <div className="col-12">
-                <h1 className="readDownload title"> Download </h1>
+                <h2 className="readDownload title"> Download </h2>
               </div>
             <div className="row">
             <div className="col-4">

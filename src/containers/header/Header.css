@@ -67,9 +67,10 @@
   text-decoration: none;
   cursor: pointer;
   padding: 20px;
+  color: #878783;
 }
 .link:hover{
-  color:rgba(0,0,0, 1);
+  color:#878783;
 }
 
 
