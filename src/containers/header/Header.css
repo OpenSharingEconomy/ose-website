@@ -39,10 +39,12 @@
   position:fixed;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  transition:background-color 0.5s ease,border-width 1s ease,height 0.7s ease;
+  transition:color 1s ease, background-color 0.6s ease,border-width 1s ease,height 0.7s ease;
   height: 80px;
-  background-color: #f5f5f5;
-  border: grey solid 1px;
+  color:white;
+  /* background-color: #29516D; */
+  background-color:  #3873A0;
+  border: black solid 1px;
   z-index: 1000;
 }
 

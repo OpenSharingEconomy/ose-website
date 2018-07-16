@@ -14,7 +14,7 @@ export default class Team extends React.Component {
       desc: true,
       popovers: [
         {
-          placement: 'bottom',
+          placement: 'right',
           buttonTitle: '+',
           className:'popup',
           innerClassName:'popupInner',
@@ -22,7 +22,7 @@ export default class Team extends React.Component {
           text:'Software Engineer from the Grenoble Institute of Technology, Conrad has worked for 8 years in the software industry as Scrum Master, Technical Leader and Architect. Passionate about his work, he is always looking for new opportunities on how to have a better impact on the world. He also loves bicycles and cats.'
         },
         {
-          placement: 'bottom',
+          placement: 'right',
           buttonTitle: '+',
           className:'popup',
           innerClassName:'popupInner',
@@ -30,7 +30,7 @@ export default class Team extends React.Component {
           text:'Julien has ten years of experience behind him in a number of different companies and in various domains. His acute vision of how a company works with its context is of great help when it comes to make important decisions'
         },
         {
-          placement: 'bottom',
+          placement: 'right',
           buttonTitle: '+',
           className:'popup',
           innerClassName:'popupInner',

@@ -54,13 +54,13 @@ export default class Whitepaper extends React.Component {
             <div className="col-4">
               <a href={PDF} download>
                 <img className="drapeaux" src={flagFR}/>
-                <span> Download ENGLISH version </span>
+                <span> Download FRENCH version </span>
               </a>
             </div>
             <div className="col-4">
               <a href={PDF} download>
                 <img className="drapeaux" src={flagFR}/>
-                <span> Download FRENCH version </span>
+                <span> Download ENGLISH version </span>
               </a>
             </div>
           </div>

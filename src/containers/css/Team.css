@@ -20,23 +20,22 @@
 }
 
 
-.desc{
-  float:right;
-  margin-right: 10px;
-  border: 0.5px solid black;
-  width: 25px;
-  height: 25px;
-}
-.desc:hover{
-  background-color: #cff0f7;
-}
-
 .popup{
-  background-color: #efedd7;
+  background-color: #adb3bc;
 }
 
 .popupInner{
   color:black;
-  text-align: center;
-  border:solid 1px red
+  height:300px;
+}
+
+.popoverButton {
+  float: right;
+}
+
+#item{
+  height: 50px;
+  transition:border-width 1s ease,height 0.7s ease;
+  height: 300px;
+  border: grey solid 1px;
 }

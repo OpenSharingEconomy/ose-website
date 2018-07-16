@@ -3,12 +3,12 @@
 }
 
 a {
-  color:rgba(66,191,244, .6);
+  color: black;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover{
-  color:rgba(66,191,244, 1);
+  color:rgba(56,115,160,0.8);
   text-decoration: none;
 
 }
@@ -18,24 +18,14 @@ a:hover{
 }
 
 #read {
-    color: #8f9fba;
+    color: rgba(56,115,160,0.9);
 }
 #download {
     margin-top: 100px;
-    color: #8f9fba;
+    color: rgba(56,115,160,0.9);
 }
 .readDownload{
   margin-top: 20px;
   font-size: 180%;
   margin-bottom: 30px;
 }
-/* .readDownload::before{
-  content: '';
-  background-color: #CDE3FB;
-  height: 2px;
-  width: 60px;
-  border-radius: 1px;
-  position: absolute;
-  top: 50px;
-  left: 0;
-} */

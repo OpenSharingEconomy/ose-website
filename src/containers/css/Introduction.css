@@ -1,0 +1,31 @@
+#introduction{
+  margin-top: 50px;
+}
+
+.sub_title{
+  text-align: center;
+  font-size: 140%;
+  border-top: 0.5px solid rgba(56,115,160,0.5);
+  border-bottom: 0.5px solid rgba(56,115,160,0.5);
+  padding: 50px;
+  margin: 50px;
+}
+
+.triangle_left {
+  height: 0;
+  width: 0;
+  border-left: 25px solid rgba(56,115,160,0.5);
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-top: 25px solid rgba(56,115,160,0.5);
+  float:right;
+}
+
+.triangle_right {
+  height: 0;
+  width: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid rgba(56,115,160,0.5);
+  border-bottom: 25px solid transparent;
+  border-top: 25px solid rgba(56,115,160,0.5);
+}
