@@ -1,5 +1,4 @@
 .imgTeam {
-  margin-top: 50px;
   border-radius: 50px;
   height: 150px;
   width: 250px;
@@ -12,13 +11,19 @@
 
 .member{
   width: 250px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 4px solid black;
   border-top: 4px solid black;
+}
+
+.centerDiv{
   text-align: center;
 }
 
+.photo{
+  display: inline-block;
+  border: 3px rgba(56,115,160,0.9) solid;
+  background-color: rgba(56,115,160,0.9);
+  color:white;
+}
 
 .popup{
   background-color: #adb3bc;

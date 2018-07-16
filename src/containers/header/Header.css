@@ -42,7 +42,6 @@
   transition:color 1s ease, background-color 0.6s ease,border-width 1s ease,height 0.7s ease;
   height: 80px;
   color:white;
-  /* background-color: #29516D; */
   background-color:  #3873A0;
   border: black solid 1px;
   z-index: 1000;
@@ -77,7 +76,7 @@
 
 
 .whitelist {
-  padding: 10px;
+  padding: 7px;
   border: dotted black 2px;
 }
 
@@ -95,4 +94,5 @@
 .iconDisplay{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }

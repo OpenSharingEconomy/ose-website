@@ -12,15 +12,15 @@ export default withSiteData(() => (
 
     </div>
     <div className="row">
-      <div className="col-md-2 col-sm-6 col-xs-12">
+      <div className="col-md-2 col-sm-2 col-xs-2">
         <div className="triangle_left">
         </div>
       </div>
-      <div className="col-md-8 col-sm-6 col-xs-12">
+      <div className="col-md-8 col-sm-8 col-xs-8">
         <h2 className="sub_title">Give the sharing economy back to the people </h2>
 
       </div>
-      <div className="col-md-2 col-sm-6 col-xs-12">
+      <div className="col-md-2 col-sm-2 col-xs-2">
         <div className="triangle_right">
         </div>
       </div>

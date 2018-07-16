@@ -15,15 +15,21 @@ import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem,Button } from 'rea
 export default class Header extends React.Component {
   constructor(props){
     super(props)
-    this.state = {style:"Fix",width:2500,dropdownOpen: false}
+    this.state = {style:"Fix",width:2500,dropdownOpen: false,dropdownLangueOpen: false}
     this.handleScroll = this.handleScroll.bind(this)
     this.handleSize = this.handleSize.bind(this)
     this.toggle = this.toggle.bind(this);
+    this.toggleLanguage = this.toggleLanguage.bind(this);
   }
 
   toggle() {
     this.setState(prevState => ({
       dropdownOpen: !prevState.dropdownOpen
+    }));
+  }
+  toggleLanguage() {
+    this.setState(prevState => ({
+      dropdownLangueOpen: !prevState.dropdownLangueOpen
     }));
   }
 
@@ -54,8 +60,7 @@ export default class Header extends React.Component {
     var Width = this.state.width
       return(
           <header  id="headerDisplay" refs="headerDisplay" className={`row align-items-center ${headerAnim}`}>
-              <div className="col-8 menuDisplay">
-                <img className={oseLogo} src={Oselogo} onClick={() => scroll.scrollToTop()} />
+              <div className="col-4 menuDisplay">
                 {Width<950?
                     (<Dropdown id="menu-dropdown" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle style={{backgroundColor:'white',color:'black'}}>
@@ -79,12 +84,30 @@ export default class Header extends React.Component {
                   </nav>)
                 }
               </div>
+              <div className="col-4 menuDisplay">
+
+              <img className={oseLogo} src={Oselogo} onClick={() => scroll.scrollToTop()} />
+              </div>
               <div className="col-4 iconDisplay">
                 {Width>950?
                 (  <div id="button-whitelist">
                     <Link activeClass="active" className="whitelist" to="whitelist" spy={true} smooth={true} duration={750} offset={-200}> WHITELIST </Link>
                   </div> ): null
                 }
+                <div>
+                  <Dropdown id="menu-dropdown" isOpen={this.state.dropdownLangueOpen} toggle={this.toggleLanguage}>
+                  <DropdownToggle style={{backgroundColor:'white',color:'black'}}>
+                    Langues
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem  href="" > Anglais </DropdownItem>
+                    <DropdownItem  href="" > Espagnol </DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
+                </div>
+
+
+
                 <div id="oseIcon">
                   <a href="   https://t.me/blockfood" >
                     <img className="icon" src={telegramme} />
