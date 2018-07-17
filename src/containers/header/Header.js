@@ -59,9 +59,9 @@ export default class Header extends React.Component {
     var oseLogo ='oseLogo'+this.state.style
     var Width = this.state.width
       return(
-          <header  id="headerDisplay" refs="headerDisplay" className={`row align-items-center ${headerAnim}`}>
-              <div className="col-4 menuDisplay">
-                {Width<950?
+          <header  refs="headerDisplay" className={`row align-items-center ${headerAnim}`}>
+              <div className="col-5" id="headerDisplay">
+                {Width<550?
                     (<Dropdown id="menu-dropdown" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle style={{backgroundColor:'white',color:'black'}}>
           <p>Menu</p>
@@ -77,23 +77,39 @@ export default class Header extends React.Component {
                   )
                   :
                   (<nav id="header-menu">
+                  <span className="span">
                     <Link activeClass="active" className="link" to="introduction" spy={true} smooth={true} duration={750} offset={-200}> Home </Link>
+                  </span>
+                  <span className="span">
                     <Link activeClass="active" className="link" to="team" spy={true} smooth={true} duration={750} offset={-200}> Team </Link>
+                  </span>
+                  <span className="span">
                     <Link activeClass="active" className="link" to="whitepaper" spy={true} smooth={true} duration={750} offset={-200}> WhitePaper </Link>
+                  </span>
+                  <span className="span">
                     <Link activeClass="active" className="link" to="about" spy={true} smooth={true} duration={750} offset={200}> About </Link>
+                    </span>
                   </nav>)
                 }
               </div>
-              <div className="col-4 menuDisplay">
+              <div className="col-2 menuDisplay">
 
               <img className={oseLogo} src={Oselogo} onClick={() => scroll.scrollToTop()} />
               </div>
-              <div className="col-4 iconDisplay">
+              <div className="col-5 iconDisplay">
                 {Width>950?
                 (  <div id="button-whitelist">
                     <Link activeClass="active" className="whitelist" to="whitelist" spy={true} smooth={true} duration={750} offset={-200}> WHITELIST </Link>
                   </div> ): null
                 }
+                <div id="oseIcon">
+                  <a href="   https://t.me/blockfood" >
+                    <img className="icon" src={telegramme} />
+                  </a>
+                  <a href="https://twitter.com/BlockFood" >
+                    <img  className="icon"  src={twitter} />
+                  </a>
+                </div>
                 <div>
                   <Dropdown id="menu-dropdown" isOpen={this.state.dropdownLangueOpen} toggle={this.toggleLanguage}>
                   <DropdownToggle style={{backgroundColor:'white',color:'black'}}>
@@ -104,17 +120,6 @@ export default class Header extends React.Component {
                     <DropdownItem  href="" > Espagnol </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
-                </div>
-
-
-
-                <div id="oseIcon">
-                  <a href="   https://t.me/blockfood" >
-                    <img className="icon" src={telegramme} />
-                  </a>
-                  <a href="https://twitter.com/BlockFood" >
-                    <img  className="icon"  src={twitter} />
-                  </a>
                 </div>
               </div>
           </header>

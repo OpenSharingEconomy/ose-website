@@ -1,22 +1,4 @@
-@media (max-width: 850px) {
-  .iconDisplay{
-    display: flex;
-    justify-content: flex-start;
-     flex-direction: column;
-  }
-  .menuDisplay{
-    display: flex;
-    align-items:center;
-  }
-  #header-menu{
-    display:flex;
-    align-items: center;
-  }
-  .link {
-    transition: margin 1s ease;
-    margin: -4%;
-  }
-}
+
 
 #menu-dropdown{
   margin-left: 25px;
@@ -30,8 +12,8 @@
   transition: height 0.4s ease;
   height: 100px;
   z-index: 1000;
-  border: grey solid 0px;
-
+  color: #3873A0;
+  border-bottom: #3873A0 solid 0.5px;
 }
 
 .headerMoving{
@@ -39,7 +21,7 @@
   position:fixed;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  transition:color 1s ease, background-color 0.6s ease,border-width 1s ease,height 0.7s ease;
+  transition:background-color 0.6s ease,border-width 1s ease,height 0.7s ease;
   height: 80px;
   color:white;
   background-color:  #3873A0;
@@ -48,8 +30,20 @@
 }
 
 .menuDisplay{
-  display: flex;
-  align-items: center;
+  text-align: center;
+}
+
+#headerDisplay{
+  text-align: right;
+}
+
+.span{
+    padding: 20px;
+    cursor: pointer;
+}
+.span:hover{
+  animation-duration: 1s;
+  animation-name: slidein;
 }
 
 .oseLogoFix {
@@ -62,16 +56,6 @@
     transition: width 1.5s ease;
     width: 6%;
       min-width: 50px;
-}
-
-.link {
-  text-decoration: none;
-  cursor: pointer;
-  padding: 20px;
-  color: #878783;
-}
-.link:hover{
-  color:#878783;
 }
 
 

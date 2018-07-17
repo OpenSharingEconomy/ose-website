@@ -12,17 +12,15 @@
 }
 
 .triangle_left {
-  border-left: 25px solid rgba(56,115,160,0.5);
-  border-right: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-top: 25px solid rgba(56,115,160,0.5);
-  float:right;
+  border-left: 10px solid rgba(56,115,160,0.5);
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid rgba(56,115,160,0.5);
 }
 
 .triangle_right {
-  border-left: 25px solid transparent;
-  border-right: 25px solid rgba(56,115,160,0.5);
-  border-bottom: 25px solid transparent;
-  border-top: 25px solid rgba(56,115,160,0.5);
-  float: left;
+  border-left: 10px solid transparent;
+  border-right: 10px solid rgba(56,115,160,0.5);
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid rgba(56,115,160,0.5);
 }

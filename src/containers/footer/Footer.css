@@ -1,11 +1,12 @@
 #footer-display {
   position:relative;
   bottom:0;
+  color:white;
   width: 100%;
-  border-top: 1px solid grey;
   text-align: center;
   display: flex;
   flex-direction: column;
+  background-color: rgba(56,115,160,0.8)
 }
 
 .icon {
